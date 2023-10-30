@@ -1,0 +1,137 @@
+.bg-ligth{
+
+    background-color: #fff;
+    color: #000;
+
+}
+
+.bg-dark{
+    background-color: #252323;
+    color: #fff;
+
+}
+
+header {
+    background-color: #252323;
+
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header .img-logo {
+    width: 100px;
+    /* contraste normal */
+}
+.muda-contraste {
+    filter: contrast(10%); 
+    /* contraste alterado */
+}
+button {
+    border: 2px solid #b2987d;
+    border-radius: 40px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: bold;
+    display: flex;
+cursor: pointer;
+}
+
+.not-inverte-icon{
+    flex-direction: row;
+   
+}
+.inverte-icon{
+    flex-direction: row-reverse;
+
+}
+
+.header .img-icon {
+    width: 20px;
+}
+
+.banner {
+    height: 35vh;
+    background-image: url('../../assets/banner-barbearia.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.descricao {
+    height: calc(65vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    
+}
+.descricao h1 {
+    font-size: 30px;
+}
+
+.descricao .especial {
+    margin-top: 10px;
+    color: #b2987d;
+    font-family: 'Great Vibes';
+    font-size: 42px;
+}
+
+@media(max-width:768px) {
+
+    .header .img-logo {
+        width: 80px;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .banner {
+        height: 30vh;
+    }
+
+    .descricao {
+        height: calc(70vh - 80px);
+        gap: 12px
+    }
+
+    .descricao h1 {
+        font-size: 26px;
+    }
+
+    .descricao .especial {
+        margin-top: 5px;
+    }
+
+}
+
+
+
+@media(max-width:425px) {
+
+    .descricao h1 {
+        font-size: 22px;
+    }
+
+    .descricao p {
+        font-size: 14px;
+    }
+
+    .descricao .especial {
+        font-size: 32px;
+
+    }
+
+}
